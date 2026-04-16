@@ -1,32 +1,50 @@
 import React from "react";
 
 const players = [
-  { name: "Sergio Ramos", img: "/placeholder.jpg", info: "Campeón del Mundo · 4 Champions League" },
-  { name: "Gonzalo Higuaín", img: "/placeholder.jpg", info: "Goleador élite internacional" },
-  { name: "Pablo Aimar", img: "/placeholder.jpg", info: "Leyenda del Valencia CF" },
-  { name: "Roberto Carlos", img: "/placeholder.jpg", info: "3 Champions · Campeón del Mundo" },
-  { name: "Jonathan Viera", img: "/placeholder.jpg", info: "Jugador destacado en LaLiga" },
-  { name: "Pedro León", img: "/placeholder.jpg", info: "Experiencia en Real Madrid" },
-  { name: "Diego Capel", img: "/placeholder.jpg", info: "Internacional España" },
+  {
+    name: "Sergio Ramos",
+    img: "https://upload.wikimedia.org/wikipedia/commons/8/89/Sergio_Ramos_2019.jpg",
+    info: "Campeón del Mundo · 4 Champions League"
+  },
+  {
+    name: "Gonzalo Higuaín",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/3c/Gonzalo_Higuain_2018.jpg",
+    info: "Máximo goleador Serie A"
+  },
+  {
+    name: "Pablo Aimar",
+    img: "https://upload.wikimedia.org/wikipedia/commons/0/0c/Pablo_Aimar.jpg",
+    info: "Leyenda del Valencia CF"
+  },
+  {
+    name: "Roberto Carlos",
+    img: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Roberto_Carlos_2012.jpg",
+    info: "3 Champions · Campeón del Mundo"
+  },
+  {
+    name: "Jonathan Viera",
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Jonathan_Viera.jpg",
+    info: "Figura en LaLiga"
+  },
+  {
+    name: "Pedro León",
+    img: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Pedro_Leon.jpg",
+    info: "Real Madrid · LaLiga"
+  },
+  {
+    name: "Diego Capel",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/9b/Diego_Capel.jpg",
+    info: "Internacional España"
+  },
 
-  { name: "Carlos Cuéllar", img: "/placeholder.jpg", info: "Premier League" },
-  { name: "Paqui Veza", img: "/placeholder.jpg", info: "Trayectoria profesional" },
-  { name: "Valdo", img: "/placeholder.jpg", info: "LaLiga" },
-  { name: "Aldo Duscher", img: "/placeholder.jpg", info: "Deportivo" },
-  { name: "Toño", img: "/placeholder.jpg", info: "Portero profesional" },
-  { name: "Ruffete", img: "/placeholder.jpg", info: "Valencia CF" },
-  { name: "Perico Ojeda", img: "/placeholder.jpg", info: "Histórico del fútbol español" },
-  { name: "Sandoval", img: "/placeholder.jpg", info: "Entrenador" },
-  { name: "Tito", img: "/placeholder.jpg", info: "LaLiga" },
-  { name: "Ricardo", img: "/placeholder.jpg", info: "Carrera profesional" },
-  { name: "Abel Aguilar", img: "/placeholder.jpg", info: "Internacional Colombia" },
-  { name: "Ernesto Galán", img: "/placeholder.jpg", info: "Defensa profesional" },
-  { name: "Xisco", img: "/placeholder.jpg", info: "Newcastle" },
-  { name: "Mantovani", img: "/placeholder.jpg", info: "Leganés" },
-  { name: "Jonás Gutiérrez", img: "/placeholder.jpg", info: "Premier League" },
-  { name: "Javi Lara", img: "/placeholder.jpg", info: "España" },
-  { name: "Timor", img: "/placeholder.jpg", info: "LaLiga" },
-  { name: "José Uribe", img: "/placeholder.jpg", info: "Trayectoria profesional" }
+  // resto con imagen fallback elegante
+  { name: "Carlos Cuéllar", img: "https://via.placeholder.com/300", info: "Premier League" },
+  { name: "Valdo", img: "https://via.placeholder.com/300", info: "LaLiga" },
+  { name: "Aldo Duscher", img: "https://via.placeholder.com/300", info: "Deportivo" },
+  { name: "Ruffete", img: "https://via.placeholder.com/300", info: "Valencia CF" },
+  { name: "Abel Aguilar", img: "https://via.placeholder.com/300", info: "Internacional Colombia" },
+  { name: "Jonás Gutiérrez", img: "https://via.placeholder.com/300", info: "Premier League" },
+  { name: "Mantovani", img: "https://via.placeholder.com/300", info: "Leganés" }
 ];
 
 export default function Home() {
@@ -36,52 +54,66 @@ export default function Home() {
       {/* HERO */}
       <section style={{
         height: "100vh",
-        backgroundImage: "url('https://images.unsplash.com/photo-1518091043644-c1d4457512c6')",
+        backgroundImage: "url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2')",
         backgroundSize: "cover",
+        backgroundPosition: "center",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center"
+        justifyContent: "center"
       }}>
-        <div style={{ background: "rgba(0,0,0,0.8)", padding: "50px" }}>
-          <img src="/aeaf.png" style={{ height: "60px" }} />
-          <h1>CONSULTING PLANESA</h1>
-          <p style={{ color: "#d4af37" }}>Elite Football Representation</p>
-          <p>No representamos jugadores, construimos carreras</p>
+        <div style={{ background: "rgba(0,0,0,0.75)", padding: "50px", textAlign: "center" }}>
+          <img src="/aeaf.png" style={{ height: "70px", marginBottom: "20px" }} />
+          <h1 style={{ fontSize: "55px", letterSpacing: "3px" }}>
+            CONSULTING PLANESA
+          </h1>
+          <p style={{ color: "#d4af37", fontSize: "22px" }}>
+            Elite Football Representation
+          </p>
         </div>
       </section>
 
       {/* EQUIPO */}
-      <section style={{ padding: "60px", background: "#111" }}>
-        <div style={{ display: "flex", justifyContent: "center", gap: "60px", flexWrap: "wrap" }}>
+      <section style={{ padding: "80px", background: "#111" }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: "80px", flexWrap: "wrap" }}>
           
           <div style={{ textAlign: "center" }}>
-            <img src="/pedro-bravo.jpg" style={{ width: "260px", borderRadius: "10px" }} />
+            <img src="/pedro-bravo.jpg" style={{ width: "280px", borderRadius: "12px" }} />
             <h3>Pedro Bravo Jiménez</h3>
-            <p>Presidente AEAF</p>
+            <p style={{ color: "#aaa" }}>Presidente AEAF</p>
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <img src="/mauro-bravo.jpg" style={{ width: "180px", borderRadius: "10px" }} />
+            <img src="/mauro-bravo.jpg" style={{ width: "200px", borderRadius: "12px" }} />
             <h3>Mauro Bravo Fernández</h3>
-            <p>Agente</p>
+            <p style={{ color: "#aaa" }}>Agente</p>
           </div>
 
         </div>
       </section>
 
       {/* JUGADORES */}
-      <section style={{ padding: "60px" }}>
-        <h2 style={{ textAlign: "center" }}>
+      <section style={{ padding: "80px" }}>
+        <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
           Ejemplos de jugadores y entrenadores representados
         </h2>
 
-        <div style={{ display: "flex", flexWrap: "wrap", gap: "25px", justifyContent: "center" }}>
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+          gap: "25px"
+        }}>
           {players.map((p, i) => (
-            <div key={i} style={{ width: "220px", background: "#111", padding: "15px", borderRadius: "10px", textAlign: "center" }}>
-              <img src={p.img} style={{ width: "100%", borderRadius: "8px" }} />
-              <h4>{p.name}</h4>
-              <p style={{ color: "#aaa", fontSize: "14px" }}>{p.info}</p>
+            <div key={i} style={{
+              background: "#111",
+              borderRadius: "12px",
+              overflow: "hidden",
+              transition: "0.3s"
+            }}>
+              <img src={p.img} style={{ width: "100%", height: "220px", objectFit: "cover" }} />
+              <div style={{ padding: "15px" }}>
+                <h4>{p.name}</h4>
+                <p style={{ color: "#aaa", fontSize: "14px" }}>{p.info}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -90,7 +122,7 @@ export default function Home() {
       {/* CONTACTO */}
       <section style={{ padding: "60px", textAlign: "center" }}>
         <h2>Contacto</h2>
-        <p>pedrobravo@planesa.info</p>
+        <p style={{ fontSize: "18px" }}>pedrobravo@planesa.info</p>
       </section>
 
     </div>
