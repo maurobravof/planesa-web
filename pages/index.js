@@ -90,7 +90,42 @@ export default function Home() {
 
         </div>
       </section>
+{/* CV PEDRO BRAVO */}
+<section style={{ padding: "80px", maxWidth: "1000px", margin: "auto" }}>
+  <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
+    Pedro Bravo Jiménez
+  </h2>
 
+  <p style={{ textAlign: "center", color: "#aaa", marginBottom: "40px" }}>
+    Presidente de la Asociación Española de Agentes de Futbolistas (AEAF)
+  </p>
+
+  <div style={{ lineHeight: "1.8" }}>
+    <h3>Trayectoria Profesional</h3>
+    <ul>
+      <li>Más de 33 años de experiencia en representación de futbolistas</li>
+      <li>Más de 1000 jugadores gestionados a lo largo de su carrera</li>
+      <li>Presidente de la AEAF (Agentes de España)</li>
+      <li>Amplia red de contactos en clubes nacionales e internacionales</li>
+    </ul>
+
+    <h3>Ponencias y Conferencias</h3>
+    <ul>
+      <li>Ponente en congresos de agentes FIFA</li>
+      <li>Participación en mesas redondas sobre regulación del fútbol</li>
+      <li>Colaborador en formación de nuevos agentes</li>
+      <li>Intervenciones en medios deportivos especializados</li>
+    </ul>
+
+    <h3>Especialización</h3>
+    <ul>
+      <li>Negociación de contratos profesionales</li>
+      <li>Gestión de carrera de futbolistas</li>
+      <li>Asesoramiento estratégico y financiero</li>
+      <li>Relaciones institucionales en el fútbol</li>
+    </ul>
+  </div>
+</section>
       {/* JUGADORES */}
       <section style={{ padding: "80px" }}>
         <h2 style={{ textAlign: "center", marginBottom: "40px" }}>
