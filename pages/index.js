@@ -15,49 +15,43 @@ export default function Home() {
         justifyContent: "center",
         textAlign: "center"
       }}>
-        <div style={{ background: "rgba(0,0,0,0.7)", padding: "50px", borderRadius: "10px" }}>
-          <h1 style={{ fontSize: "50px", letterSpacing: "2px" }}>
+        <div style={{ background: "rgba(0,0,0,0.75)", padding: "50px", borderRadius: "12px" }}>
+          <img src="/aeaf.png" style={{ height: "60px", marginBottom: "20px" }} />
+          <h1 style={{ fontSize: "52px", letterSpacing: "2px" }}>
             CONSULTING PLANESA
           </h1>
-          <p style={{ color: "#d4af37", fontSize: "20px" }}>
+          <p style={{ color: "#d4af37", fontSize: "22px" }}>
             Elite Football Representation
           </p>
           <p>No representamos jugadores, construimos carreras</p>
         </div>
       </section>
 
-      {/* LOGOS */}
-      <section style={{ textAlign: "center", padding: "40px", background: "#111" }}>
-        <img src="/aeaf.png" style={{ height: "40px", margin: "20px" }} />
-        <img src="/fifa.png" style={{ height: "40px", margin: "20px" }} />
-        <img src="/rfef.png" style={{ height: "40px", margin: "20px" }} />
-      </section>
-
       {/* ABOUT */}
-      <section style={{ padding: "60px", maxWidth: "900px", margin: "auto" }}>
+      <section style={{ padding: "80px 20px", maxWidth: "1000px", margin: "auto" }}>
         <h2>Sobre Nosotros</h2>
         <p>
           Más de 33 años de experiencia en representación de futbolistas.
           Cerca de 1000 jugadores han confiado en la agencia a lo largo de su trayectoria.
         </p>
         <p>
-          Servicio exclusivo y personalizado para cada jugador,
-          cubriendo tanto el ámbito deportivo como el financiero y personal.
+          Servicio exclusivo, personalizado y discreto para cada jugador,
+          tanto en el ámbito deportivo como financiero y personal.
         </p>
       </section>
 
       {/* TEAM */}
-      <section style={{ padding: "60px", background: "#111" }}>
-        <div style={{ display: "flex", justifyContent: "center", gap: "60px", flexWrap: "wrap" }}>
+      <section style={{ padding: "80px 20px", background: "#111" }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: "80px", flexWrap: "wrap" }}>
           
           <div style={{ textAlign: "center" }}>
-            <img src="/pedro-bravo.jpg" style={{ width: "200px", borderRadius: "10px" }} />
+            <img src="/pedro-bravo.jpg" style={{ width: "260px", borderRadius: "12px", marginBottom: "20px" }} />
             <h3>Pedro Bravo Jiménez</h3>
             <p style={{ color: "#aaa" }}>Presidente AEAF</p>
           </div>
 
           <div style={{ textAlign: "center" }}>
-            <img src="/mauro-bravo.jpg" style={{ width: "200px", borderRadius: "10px" }} />
+            <img src="/mauro-bravo.jpg" style={{ width: "180px", borderRadius: "12px", marginBottom: "20px" }} />
             <h3>Mauro Bravo Fernández</h3>
             <p style={{ color: "#aaa" }}>Agente</p>
           </div>
@@ -66,9 +60,9 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section style={{ padding: "60px", maxWidth: "900px", margin: "auto" }}>
+      <section style={{ padding: "80px 20px", maxWidth: "1000px", margin: "auto" }}>
         <h2>Servicios</h2>
-        <ul>
+        <ul style={{ lineHeight: "2" }}>
           <li>Representación nacional e internacional</li>
           <li>Negociación de contratos</li>
           <li>Planificación de carrera</li>
@@ -78,22 +72,21 @@ export default function Home() {
       </section>
 
       {/* PLAYERS */}
-      <section style={{ padding: "60px", background: "#111" }}>
-        <div style={{ maxWidth: "900px", margin: "auto" }}>
+      <section style={{ padding: "80px 20px", background: "#111" }}>
+        <div style={{ maxWidth: "1000px", margin: "auto" }}>
           <h2>Trayectoria</h2>
-          <p>
+          <p style={{ color: "#ccc" }}>
             Han pasado por la agencia jugadores como Sergio Ramos, Higuaín,
-            Pablo Aimar, Roberto Carlos, Jonathan Viera, Pedro León, Diego Capel,
-            entre otros.
+            Pablo Aimar, Roberto Carlos, Jonathan Viera, Pedro León,
+            Diego Capel, entre otros.
           </p>
         </div>
       </section>
 
       {/* CONTACTO */}
-      <section style={{ padding: "60px", textAlign: "center" }}>
+      <section style={{ padding: "80px 20px", textAlign: "center" }}>
         <h2>Contacto</h2>
-        <p>Email: contacto@consultingplanesa.com</p>
-        <p>Teléfono: +34 XXX XXX XXX</p>
+        <p>Email: pedrobravo@planesa.info</p>
       </section>
 
       {/* FOOTER */}
